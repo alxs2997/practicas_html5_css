@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de menú de navegación</title>
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="estilos/style.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
-            <img src="img/path352.png" alt="Logo" class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <section>
-        
-    </section>
 
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/path352.png" alt="Empresa_img" class="logo">
+            <nav>
+                <!--cuando el icono del menú sea responsivo-->
+                <!--<input type="checkbox" id="check">
+                
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>-->
+                <ul>
+                    <li><a class="active" href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="zona1">
+
+    </section>
+    <section class="zona2">
+        <h1>Contenido</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, 
+            odio voluptatem quod, error ipsa placeat nostrum harum a accusantium
+            facere velit maiores dolor pariatur in, numquam explicabo! Impedit, maiores repellat.</p>
+    </section>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

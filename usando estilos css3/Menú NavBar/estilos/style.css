@@ -7,11 +7,50 @@ no existe un estándar específico de medidas.*/
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: .7s;
+    padding: 30px 20px;
+    z-index: 10;
+
+}
+/*este cambio solo afecta si por a o b motivo no se carga una imagen de logo*/
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #44e3c3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: .5s;
+}
+header.abajo{
+    background: #65e6f4;
+    padding: 15px 20px;
 }
 nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
     background: #9019b1;
     height: 80px;
-    width: 100%;
+    width: 100%;*/
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .enlace{
     position: absolute;
@@ -30,8 +69,12 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
+    position: relative;
+    margin: 0 15px;
     color: #fff;
     font-size: 18px;
+    font-weight: 600;
+    transition: .7s;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -40,6 +83,18 @@ nav ul li a:hover{
     background: #5613a2;
     color: #fbfbfb;
     transition: .5s;
+}
+/*aca trabajamos otra forma de editar una sección*/
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+header .abajo .logo, header .abajo nav ul li a{
+    color: #000;
 }
 .checkbtn{
     font-size: 30px;
@@ -53,13 +108,17 @@ nav ul li a:hover{
 #check{
     display: none;
 }
+/*---------------Esta es una forma de editar una sección, arriba se explica otra forma----------------*/
+/*
 section{
     background: url(../img/background.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);
-}
+}*/
+
 /*Para la parte de tableta*/
+
 @media (max-width: 952px){
     .enlace{
         padding-left: 20px; 
@@ -69,6 +128,7 @@ section{
     }
 }
 /*Para la parte de celular o smartphone*/
+
 @media (max-width: 858px){
     .checkbtn{
         display: block;
