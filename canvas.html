@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario My Canvas</title>
+
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3; 
+        background-color: aquamarine;">
+    </canvas>
+    <video width="320" height="240" controls autoplay>
+        <source src="video/Logo  Estilo de Lnea Definida_free.mp4"
+        type="video/mp4">
+    </video>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.moveTo (0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+
+</body>
+</head>
+
+</html>

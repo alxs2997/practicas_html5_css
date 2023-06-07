@@ -1,0 +1,16 @@
+En el artículo Registro de dominios de la Wikipedia se describe el siguiente procedimiento de registro de un dominio:
+
+Elegir un dominio.
+
+Verificar la disponibilidad del nombre de dominio deseado en algún registrador.
+Ingresar los datos personales.
+Elegir la cantidad de tiempo que el dominio permanecerá registrado.
+Pagar el dominio, normalmente con tarjeta de crédito (o también por transferencia bancaria).
+Una vez arrendado, el ahora registrante del dominio debe configurarlo con la URL a la cual redireccionar, IP del servidor al que encontrará mediante la DNS, servidor DNS usada por este.
+El registrante del dominio debe esperar un tiempo para que el dominio sea reconocido en todos los servidores de Internet. Para los dominios .com y .net la demora es entre 4 y 8 horas, y para otros es generalmente entre 24 y 48 horas. En ese período:
+
+El registrador contacta con ICANN y realiza el proceso de forma transparente para el registrante.
+Se avisa al registrante que el dominio fue registrado.
+El nuevo dominio funciona, y resuelve a la IP apropiada en el servidor DNS usado, pero no en el resto de servidores DNS del mundo. Poco a poco se va propagando el cambio al resto de servidores (propagación DNS). Como cada uno tiene distintos tiempos de actualización y parámetros de caché distintos, pasan varias horas hasta que todos los servidores DNS del mundo conocen cómo hacer la resolución del dominio.
+
+La página ya es accesible mediante un nombre de dominio desde cualquier computadora.
