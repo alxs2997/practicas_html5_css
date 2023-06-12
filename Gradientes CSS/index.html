@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes-CSS</title>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		section{
+			width: 100%;
+			height: 100vh;
+			color: #faa953;
+			background: linear-gradient(45deg,rgb(0, 145, 255),rgb(15, 229, 240),rgb(97, 246, 97),rgb(39, 1, 1));
+			background-size: 400% 400%;
+			position: relative;
+			animation: cambiar 10s ease-in-out infinite;/*ANIMACION QUE DECLARAMOS EN EL KEYFRAME*/
+		}
+		h1{
+			font-size: 4rem;
+			letter-spacing: 2px;
+			border: solid 3px #ffb371;
+			border-radius: 25px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			padding: 2rem 3rem;
+		}
+
+		@keyframes cambiar{
+			0%{background-position: 0 50%;}/* DE CERO A LA MITAD*/
+			50%{background-position: 100% 50%;}/*DE LA MITAD A 100%*/
+			100%{background-position: 0 50%;}/*DE 100% A CERO PARA QUE REGRESE*/
+		}
+	</style>
+</head>
+<body>
+    <section>
+		<h1>HTML & CSS</h1>
+	</section>
+</body>
+</html>
