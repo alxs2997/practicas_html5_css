@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Estilos css-->
     <link rel="stylesheet" href="estilo/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!--API de fuentes de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +29,6 @@
                 <li><a href="#banner" class="active">Inicio</a></li>
                 <li><a href="#blog">Blog</a></li>
             </ul>
-            <div class="social-media">
-                <a href="https://www.facebook.com/alexis.gallegos.73113"><i class='bx bxl-facebook'></i></a>
-                <a href="https://twitter.com/Alxs2997"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/alxs2997"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://github.com/alxs2997" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.youtube.com/channel/UCfs2rOMsEdcRrKVUYrbkKcQ" target="_blank"><i
-                        class='bx bxl-youtube'></i></a>
-            </div>
         </nav>
     </header>
     <section class="banner">
@@ -44,32 +39,46 @@
     <section class="contenido">
         <div class="contenedor_logos">
             <div class="logo">
-                <img src="https://img.icons8.com/ios-filled/50/html-5--v1.png" alt="html5">
+                <i class='bx bxl-html5' ></i>
             </div>
             <div class="logo">
-                <img src="https://img.icons8.com/ios-filled/50/css3.png" alt="css">
+                <i class='bx bxl-css3' ></i>
             </div>
             <div class="logo">
-                <img src="https://img.icons8.com/ios-filled/50/javascript.png" alt="">
+                <i class='bx bxl-javascript' ></i>
             </div>
             <div class="logo">
-                <img src="https://img.icons8.com/ios-filled/50/php-logo.png" alt="">
+                <i class='bx bxl-php'></i>
             </div>
             <div class="logo">
-                <img src="https://img.icons8.com/ios-filled/50/mysql-logo.png" alt="">
+                <i class='bx bxl-postgresql' ></i>
             </div>
         </div>
         <div class="escogido">
-            <div class="primercontenido">
-                <h3>Espero sea de tu interes</h3>
-                <h1>
-                    <font color="#754ef9">Nueva</font> Publicación
-                </h1>
-                <p>Soy Ingeniero En Sistemas y Redes, Programador<br> y
-                    Diseñador Web, vivo en El Salvador. <br>
-                </p>
-                <br>
-            </div>
+            <div class="card" style="width: 50rem;">
+                <img class="card-img-top" src="https://technocio.com/wp-content/uploads/2022/11/Nearsure_Programador.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Espero sea de tu interes</h5>
+                  <p class="card-text">Soy Ingeniero En Sistemas y Redes, Programador<br> y
+                    Diseñador Web, vivo en El Salvador. <br></p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 67%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">67%</div>
+                      </div>
+                  <a href="#" class="btn btn-outline-info">Leer Más</a>
+                </div>
+              </div>
+              <div class="card" style="width: 50rem;">
+                <img class="card-img-top" src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-pato-primer-plano-sus-manos-hogar-pajaros-granja-avicola_247739-515.jpg?w=2000" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Hombre Pato</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates itaque officia saepe recusandae. 
+                    Voluptate iste magni ipsum neque aut enim recusandae quisquam, sequi nesciunt atque, est, quam ut laboriosam.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">95%</div>
+                      </div>
+                  <a href="#" class="btn btn-outline-info">Leer Más</a>
+                </div>
+              </div>
             <div class="imagen">
                 <img src="img/about2.png">
             </div>
